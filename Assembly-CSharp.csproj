@@ -81,6 +81,8 @@
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMoveOnSphere.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Shared\Scripts\SpawnInCircle.cs" />
+    <Compile Include="Assets\Scripts\Character\Movement\Targets\Target.cs" />
+    <Compile Include="Assets\Scripts\Character\Movement\Targets\TargetHub.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Reference Include="UnityEngine">
