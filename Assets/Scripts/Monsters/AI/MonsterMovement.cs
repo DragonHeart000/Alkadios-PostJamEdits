@@ -54,10 +54,13 @@ public class MonsterMovement : MonoBehaviour
         RaycastHit hit;
         if (Vector3.Distance(transform.position, player.transform.position) < maxRange)
         {
+
             if (Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, maxRange))
             {
+                
                 if (hit.transform == player.transform)
                 {
+
                     //Player is in range and can be seen.
                     chasing = true;
                 } else
