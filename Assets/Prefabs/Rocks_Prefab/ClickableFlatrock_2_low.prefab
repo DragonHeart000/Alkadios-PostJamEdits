@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6905490172443983283}
   m_Layer: 11
-  m_Name: ClickableStone
+  m_Name: ClickableFlatrock_2_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 4083443609952538575}
   - component: {fileID: 4388992225789980738}
   - component: {fileID: 1050071528871185751}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Flatrock_2_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
