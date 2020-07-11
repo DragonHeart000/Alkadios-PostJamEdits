@@ -168,6 +168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flatrock_low
       objectReference: {fileID: 0}
+    - target: {fileID: 4629107697514180092, guid: d8195303232254f4994f32710a22f18a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 5437591051121178438, guid: d8195303232254f4994f32710a22f18a,
         type: 3}
       propertyPath: m_LocalPosition.x
