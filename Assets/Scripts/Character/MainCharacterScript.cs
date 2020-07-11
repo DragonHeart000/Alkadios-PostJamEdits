@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Diagnostics;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class MainCharacterScript : MonoBehaviour
@@ -10,12 +12,13 @@ public class MainCharacterScript : MonoBehaviour
     const int MAX_HP = 10;
     const int MOVE_SPEED_WALK = 3;
     const int MOVE_SPEED_RUN = 5;
+    const int ENEMY_DISTANCE_FEAR = 5;
     System.Random random = new System.Random(Guid.NewGuid().GetHashCode());
 
     // dynamic attributes
     private int currentHP = 10;
     private int currentMovementSpeed = 0;
-    private int currentFearLevel = 0;
+    //private int currentFearLevel = 0;
     bool isDistracted = false;
 
     // setters and incrementers
@@ -35,9 +38,9 @@ public class MainCharacterScript : MonoBehaviour
     // only walking or running, so no incrementation of speed
     //public void incrementCurrentMovementSpeed(int delta) {   currentMovementSpeed += delta;  }
 
-    public void setCurrentFearLevel(int fear) {    currentFearLevel = fear;   }
+    //public void setCurrentFearLevel(int fear) { currentFearLevel = fear; }
 
-    public void incrementCurrentFearLevel(int delta)  {    currentFearLevel += delta;  }
+    //public void incrementCurrentFearLevel(int delta)  {    currentFearLevel += delta;  }
 
     // Function to that rolls to see if character becomes distracted by environment/object
     //   then runs the distraction anim and sets bool
@@ -55,15 +58,39 @@ public class MainCharacterScript : MonoBehaviour
         }
     }
 
+    // Function to check for nearby enemies and return how many
+    public int enemyScan()
+    {
+        int numEnemies = 0;
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Vector3 diff = transform.position - enemy.transform.position;
+            float distanceToEnemy = diff.sqrMagnitude;
+            if (distanceToEnemy < ENEMY_DISTANCE_FEAR)
+            {
+                numEnemies++;
+            }
+        }
+        return numEnemies;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (currentMovementSpeed == MOVE_SPEED_WALK && enemyScan() > 3)
+        {
+            currentMovementSpeed = MOVE_SPEED_RUN;
+        }
+        else if (currentMovementSpeed == MOVE_SPEED_RUN && enemyScan() < 3)
+        {
+            currentMovementSpeed = MOVE_SPEED_WALK;
+        }
     }
 }
