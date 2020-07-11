@@ -22,9 +22,15 @@ public class ClickableObject : MonoBehaviour
         Debug.Log("BreakPower");
     }
 
-    public virtual void TelekinesisPower()
+    public virtual void StartTelekinesisPower(Camera camera)
     {
         Debug.Log(gameObject.name);
-        Debug.Log("TelekinesisPower");
+        Debug.Log("StartTelekinesisPower");
+    }
+
+    public virtual void StopTelekinesisPower()
+    {
+        Debug.Log(gameObject.name);
+        Debug.Log("StopTelekinesisPower");
     }
 }
