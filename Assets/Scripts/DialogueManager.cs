@@ -5,13 +5,14 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
     string path = "Assets/Resources/testscript.txt";
     StreamReader sr;
-    Text DialogueText;
-    Image NextLineButton;
+    TextMeshProUGUI DialogueText;
+    Button NextLineButton;
     //public GameManager GM;
     Canvas dialogueCanvas;
 
@@ -46,10 +47,10 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        NextLineButton = GetComponent<Button>();
+        DialogueText = GetComponent<TextMeshProUGUI>();
         dialogueCanvas = GetComponentInChildren<Canvas>();
         dialogueCanvas.enabled = false;
-        NextLineButton = GetComponent<Image>();
-        DialogueText = GetComponent<Text>();
     }
 
     // Update is called once per frame
