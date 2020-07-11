@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     {
         if (agent.remainingDistance <= 0.2)
         {
-            Debug.Log("Arrived!");
             changeTillValidTarget();
         }
     }
@@ -47,7 +46,6 @@ public class PlayerController : MonoBehaviour
 
         if(path.status == NavMeshPathStatus.PathPartial || path.status == NavMeshPathStatus.PathInvalid)
         {
-            Debug.Log("Invalid path");
             return false;
         } else
         {

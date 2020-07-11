@@ -129,3 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10bf09a5990c934dbf31fa6b738745c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targets: []
+  agent: {fileID: 4296934541809691426}
+  maxRange: 5
