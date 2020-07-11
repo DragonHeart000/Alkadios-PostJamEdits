@@ -28,7 +28,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8979258431791302531}
-  - {fileID: 8979258431681628659}
   - {fileID: 8979258432118542710}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -152,7 +151,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8979258431681628658}
+      - m_Target: {fileID: 0}
         m_MethodName: QuitToMainMenu
         m_Mode: 1
         m_Arguments:
@@ -282,7 +281,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8979258431681628658}
+      - m_Target: {fileID: 0}
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -371,50 +370,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Main Menu
---- !u!1 &8979258431681628657
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8979258431681628659}
-  - component: {fileID: 8979258431681628658}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8979258431681628659
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8979258431681628657}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.8977613, y: -7.1075687, z: -15.763906}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5789195787419623107}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8979258431681628658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8979258431681628657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed3fb10bddb6144e9e887474c9fc47c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UI: {fileID: 8979258432118542709}
 --- !u!1 &8979258431717044838
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +874,7 @@ Transform:
   m_Children:
   - {fileID: 8979258431978304612}
   m_Father: {fileID: 5789195787419623107}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8979258432118542709
 MonoBehaviour:
@@ -933,7 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ccfba0a9cf2e5b46b84c1bedd470544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GM: {fileID: 8979258431681628658}
+  GM: {fileID: 0}
 --- !u!1 &8979258432174750057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8979258431681628658}
+      - m_Target: {fileID: 0}
         m_MethodName: TogglePauseMenu
         m_Mode: 1
         m_Arguments:
@@ -1183,7 +1138,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8979258431681628658}
+      - m_Target: {fileID: 0}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
