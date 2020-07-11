@@ -47,7 +47,7 @@ public class MonsterMovement : MonoBehaviour
             }
         } else
         {
-
+            changeTarget(player.transform.position);
         }
 
         RaycastHit hit;
@@ -58,9 +58,15 @@ public class MonsterMovement : MonoBehaviour
                 if (hit.transform == player.transform)
                 {
                     //Player is in range and can be seen.
-                    Debug.Log("I can see you");
+                    chasing = true;
+                } else
+                {
+                    chasing = false;
                 }
             }
+        } else
+        {
+            chasing = false;
         }
     }
 
