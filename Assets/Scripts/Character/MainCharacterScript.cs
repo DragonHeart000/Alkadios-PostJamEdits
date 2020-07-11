@@ -23,6 +23,9 @@ public class MainCharacterScript : MonoBehaviour
     private int currentMovementSpeed = 0;
     bool isDistracted = false;
 
+    // Amount of pickusps in inventory
+    int NrKeys = 0;
+
     // setters and incrementers
     public void setCurrentHP(int hp) { currentHP = hp; }
 
@@ -76,6 +79,14 @@ public class MainCharacterScript : MonoBehaviour
         return numEnemies;
     }
 
+    public void Pickup(PickupTypes type)
+    {
+        if (type == PickupTypes.key)
+        {
+            NrKeys += 1;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,7 +107,7 @@ public class MainCharacterScript : MonoBehaviour
         }
         if (enemyScan() == 0 && !isDistracted)
         {
-            rollDistract();
+            //rollDistract();
         }
     }
 }
