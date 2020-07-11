@@ -8,10 +8,12 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1.0f;
     }
 
     public void Quit()
     {
+        UnityEditor.EditorApplication.isPlaying = false; // delete for release?
         Application.Quit();
     }
 }
