@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6032608063432137826}
   m_Layer: 0
-  m_Name: CharacterMoveTarget
-  m_TagString: Untagged
+  m_Name: MoveTarget
+  m_TagString: PointOfInterest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
