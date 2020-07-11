@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 6514647477780795816}
   - component: {fileID: 7910421872536968717}
   - component: {fileID: 5342255977298864839}
+  - component: {fileID: 978430719926704118}
+  - component: {fileID: 8967803659320121749}
+  - component: {fileID: 3979355037369127151}
   m_Layer: 0
   m_Name: Stone Gate_low
   m_TagString: Untagged
@@ -79,3 +82,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &978430719926704118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846655219403098898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0c952c47e9e08449840be0986dfad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &8967803659320121749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846655219403098898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05490829, y: 0.009615135, z: 0.06653552}
+  m_Center: {x: 0, y: 0, z: 0.033317387}
+--- !u!65 &3979355037369127151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846655219403098898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: -0.07, y: 0.1, z: 0.04}
+  m_Center: {x: 0, y: -0.06, z: 0.02}

@@ -87,6 +87,16 @@ public class MainCharacterScript : MonoBehaviour
         }
     }
 
+    public bool CheckForKey()
+    {
+        if (NrKeys > 0)
+        {
+            NrKeys--;
+            return true;
+        }
+        return false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -7,6 +7,10 @@ public class Target : MonoBehaviour
 
     public bool isEnabled = true; //If the target is something the player should consider going to.
 
+    //Determine how long the character should stay at this point of interest.
+    public float waitTimeMax = 0;
+    public float waitTimeMin = 0;
+
     // Start is called before the first frame update
     void Start()
     {
