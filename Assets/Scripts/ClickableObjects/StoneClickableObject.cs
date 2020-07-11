@@ -23,7 +23,7 @@ public class StoneClickableObject : ClickableObject
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                gameObject.transform.position = hit.point;
+                gameObject.transform.parent.position = hit.point;
             }
         }
     }

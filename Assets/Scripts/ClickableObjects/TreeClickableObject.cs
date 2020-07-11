@@ -22,43 +22,43 @@ public class TreeClickableObject : ClickableObject
     // Update is called once per frame
     void Update()
     {
-        if (IsBeingDraged)
-        {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                gameObject.transform.position = hit.point;
-            }
-        }
+        //if (IsBeingDraged)
+        //{
+        //    Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        //    RaycastHit hit;
+        //    if (Physics.Raycast(ray, out hit))
+        //    {
+        //        gameObject.transform.parent.position = hit.point;
+        //    }
+        //}
     }
 
     public override void BreakPower()
     {
         base.BreakPower();
-        Destroy(gameObject);
+        Destroy(gameObject.transform.parent.gameObject);
     }
 
     public override void StartTelekinesisPower(Camera camera)
     {
-        if (Fallen)
+        //if (Fallen)
+        //{
+        //    base.StartTelekinesisPower(camera);
+        //    this.mainCamera = camera;
+        //    IsBeingDraged = true;
+        //    gameObject.GetComponent<Collider>().enabled = false;
+        //}
+        if(!Fallen) 
         {
-            base.StartTelekinesisPower(camera);
-            this.mainCamera = camera;
-            IsBeingDraged = true;
-            gameObject.GetComponent<Collider>().enabled = false;
-        }
-        else
-        {
-            gameObject.transform.rotation = Quaternion.AngleAxis(90, gameObject.transform.right);
+            gameObject.transform.parent.transform.rotation = Quaternion.AngleAxis(90, gameObject.transform.parent.right);
             Fallen = true;
         }
     }
 
     public override void StopTelekinesisPower()
     {
-            base.StopTelekinesisPower();
-            IsBeingDraged = false;
-            gameObject.GetComponent<Collider>().enabled = true;
+            //base.StopTelekinesisPower();
+            //IsBeingDraged = false;
+            //gameObject.GetComponent<Collider>().enabled = true;
     }
 }

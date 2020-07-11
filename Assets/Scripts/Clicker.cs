@@ -39,9 +39,11 @@ public class Clicker : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isDragging = false;
-            CO.StopTelekinesisPower();
-            CO = null;
-
+            if (CO != null)
+            {
+                CO.StopTelekinesisPower();
+                CO = null;
+            }
         }
 
         // Right click -- breaker
