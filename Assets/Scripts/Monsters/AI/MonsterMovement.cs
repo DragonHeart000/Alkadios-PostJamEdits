@@ -12,6 +12,7 @@ public class MonsterMovement : MonoBehaviour
 
     //bool to stop it's standard rutine if the character is near
     private bool chasing = false;
+    private bool wasChasing = false;
 
     //This can be changed to make the monster see further
     public float maxRange = 50;
@@ -51,30 +52,42 @@ public class MonsterMovement : MonoBehaviour
             changeTarget(player.transform.position);
         }
 
-        RaycastHit hit;
+        //RaycastHit hit;
         if (Vector3.Distance(transform.position, player.transform.position) < maxRange)
         {
+            /*
+             * For some unknown reason this only works sometimes. It'll work perfectly for a while but then all of a sudden decide to stop
+             * for no good reason whatsoever. I have spent too long trying to fix this so I am cutting the eye contact thing and making it only 
+             * being close.
+             * 
             Debug.Log("Close");
             if (Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, maxRange))
             {
+
                 Debug.Log("ray");
                 if (hit.transform == player.transform)
                 {
                     Debug.Log("attack");
                     //Player is in range and can be seen.
                     chasing = true;
-                } else
+                }
+                else
                 {
                     Debug.Log("No attacking");
                     chasing = false;
                 }
-            } else
-            {
-                Debug.Log("Tell dragonheart if this shows up because it really shouldn't but sometimes it fucking does.");
             }
+            */
+            chasing = true;
+            wasChasing = true;
         } else
         {
             chasing = false;
+            if (wasChasing)
+            {
+                changeTillValidTarget();
+                wasChasing = false;
+            }
         }
 
         //Determine if the enemy is close enough to attack.
