@@ -10,16 +10,16 @@ public class GameManager : MonoBehaviour
     public UIManager UI;
     public DialogueManager DM;
 
-    public void TogglePauseMenu()
+    public void ToggleDialogueMenu()
     {
-        if (UI.GetComponentInChildren<Canvas>().enabled)
+        if (DM.GetComponentInChildren<Canvas>().enabled)
         {
-            UI.GetComponentInChildren<Canvas>().enabled = false;
+            DM.GetComponentInChildren<Canvas>().enabled = false;
             Time.timeScale = 1.0f;
         }
         else
         {
-            UI.GetComponentInChildren<Canvas>().enabled = true;
+            DM.GetComponentInChildren<Canvas>().enabled = true;
             Time.timeScale = 0.0f;
         }
     }
@@ -47,8 +47,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DM.GetComponentInChildren<Canvas>().enabled = false;
-        UI.GetComponentInChildren<Canvas>().enabled = false;
+
     }
 
     // Update is called once per frame
