@@ -2,7 +2,22 @@ fileFormatVersion: 2
 guid: d4e15f67f92a5934e960131f971623c6
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 731740431315750337
+    second: Tree3-Armature|ArmatureAction.001
+  - first:
+      74: 9121513130027305676
+    second: Tree3-Armature|Tree1_Fall_Anim
+  - first:
+      74: 360524115292159610
+    second: Tree3-Armature|Tree2_Fall_Anim
+  - first:
+      74: -2067280072374737366
+    second: Tree3-Armature|Tree3_Fall_Anim
+  - first:
+      74: 2603095549883904579
+    second: Tree3-Armature|Tree4_Fall_Anim
   externalObjects:
   - first:
       type: UnityEngine:Material
