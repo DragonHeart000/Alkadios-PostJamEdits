@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public UIManager UI;
+    public DialogueManager DM;
 
     public void TogglePauseMenu()
     {
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DM.GetComponentInChildren<Canvas>().enabled = false;
         UI.GetComponentInChildren<Canvas>().enabled = false;
     }
 
