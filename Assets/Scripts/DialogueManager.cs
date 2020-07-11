@@ -4,6 +4,7 @@ using System.IO;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class DialogueManager : MonoBehaviour
     StreamReader sr;
     Text DialogueText;
     Image NextLineButton;
-    public GameManager GM;
+    //public GameManager GM;
+    Canvas dialogueCanvas;
 
     public void startDialogue()
     {
@@ -21,14 +23,14 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (this.GetComponentInChildren<Canvas>().enabled)
+        if (dialogueCanvas.enabled)
         {
-            this.GetComponentInChildren<Canvas>().enabled = false;
+            dialogueCanvas.enabled = false;
             Time.timeScale = 1.0f;
         }
         else
         {
-            this.GetComponentInChildren<Canvas>().enabled = true;
+            dialogueCanvas.enabled = true;
             Time.timeScale = 0.0f;
         }
 
@@ -44,6 +46,8 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dialogueCanvas = GetComponentInChildren<Canvas>();
+        dialogueCanvas.enabled = false;
         NextLineButton = GetComponent<Image>();
         DialogueText = GetComponent<Text>();
     }
