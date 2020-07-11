@@ -1,14 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.ComponentModel.Design;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
 using UnityEngine;
 
-public class TreeClickableObject : ClickableObject
+public class StoneClickableObject : ClickableObject
 {
-    public bool Fallen = false;
 
     bool IsBeingDraged = false;
     Camera mainCamera;
@@ -41,24 +36,16 @@ public class TreeClickableObject : ClickableObject
 
     public override void StartTelekinesisPower(Camera camera)
     {
-        if (Fallen)
-        {
-            base.StartTelekinesisPower(camera);
-            this.mainCamera = camera;
-            IsBeingDraged = true;
-            gameObject.GetComponent<Collider>().enabled = false;
-        }
-        else
-        {
-            gameObject.transform.rotation = Quaternion.AngleAxis(90, gameObject.transform.right);
-            Fallen = true;
-        }
+        base.StartTelekinesisPower(camera);
+        this.mainCamera = camera;
+        IsBeingDraged = true;
+        gameObject.GetComponent<Collider>().enabled = false;
     }
 
     public override void StopTelekinesisPower()
     {
-            base.StopTelekinesisPower();
-            IsBeingDraged = false;
-            gameObject.GetComponent<Collider>().enabled = true;
+        base.StopTelekinesisPower();
+        IsBeingDraged = false;
+        gameObject.GetComponent<Collider>().enabled = true;
     }
 }

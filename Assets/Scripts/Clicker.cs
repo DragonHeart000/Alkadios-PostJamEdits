@@ -5,13 +5,6 @@ using UnityEngine;
 
 public class Clicker : MonoBehaviour
 {
-    /*enum activeSpell
-    {
-        Break,
-        Telekenesis
-    }
-
-    activeSpell spell = activeSpell.Break;*/
 
     public Camera mainCamera;
     bool isDragging = false;
@@ -26,10 +19,6 @@ public class Clicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Q))
-            spell = activeSpell.Break;
-        if (Input.GetKeyDown(KeyCode.W))
-            spell = activeSpell.Telekenesis;*/
 
         // Left click down -- telekinesis start
         if (Input.GetMouseButtonDown(0))
@@ -42,7 +31,7 @@ public class Clicker : MonoBehaviour
                 CO = hit.collider.gameObject.GetComponent<ClickableObject>();
                 if (CO != null)
                 {
-                    CO.GetComponent<Collider>().enabled = false;
+                    CO.StartTelekinesisPower(mainCamera);
                 }
             }
         }
@@ -50,17 +39,13 @@ public class Clicker : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isDragging = false;
-            CO.GetComponent<Collider>().enabled = true;
-        }
-        if (isDragging)
-        {
-            Vector3 currentScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
-            Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentScreenSpace);
-            CO.transform.position = currentPosition;
+            CO.StopTelekinesisPower();
+            CO = null;
+
         }
 
         // Right click -- breaker
-        if (Input.GetMouseButtonUp(1))
+        if (Input.GetMouseButtonUp(1) && !isDragging)
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -72,6 +57,7 @@ public class Clicker : MonoBehaviour
                     CO.BreakPower();
                 }
             }
+            CO = null;
         }
     }
 }
