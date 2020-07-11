@@ -6,7 +6,7 @@ public class TargetHub : MonoBehaviour
 {
     public static TargetHub instance;
 
-    public Object[] targets;
+    public GameObject[] targets;
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class TargetHub : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targets = FindObjectsOfType(typeof(Target));
+        targets = GameObject.FindGameObjectsWithTag("PointOfInterest");
         Debug.Log(targets.Length + " targets found.");
     }
 
@@ -31,5 +31,10 @@ public class TargetHub : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public Target getRandom()
+    {
+        return targets[Random.Range(0, targets.Length)].GetComponent<Target>();
     }
 }
