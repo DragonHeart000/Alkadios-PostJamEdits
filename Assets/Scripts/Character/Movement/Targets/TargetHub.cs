@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class TargetHub : MonoBehaviour
 {
     public static TargetHub instance;
 
     public GameObject[] targets;
+
+    public NavMeshSurface surface;
 
     private void Awake()
     {
@@ -25,6 +28,8 @@ public class TargetHub : MonoBehaviour
     {
         targets = GameObject.FindGameObjectsWithTag("PointOfInterest");
         Debug.Log(targets.Length + " targets found.");
+
+        surface.BuildNavMesh();
     }
 
     // Update is called once per frame
