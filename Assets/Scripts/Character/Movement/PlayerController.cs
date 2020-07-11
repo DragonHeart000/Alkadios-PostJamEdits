@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
         {
             changeTillValidTarget();
         }
+
+
     }
 
     //Change target will pick a random target to go to. Returns true if path is valid and false if it can not get there

@@ -54,19 +54,23 @@ public class MonsterMovement : MonoBehaviour
         RaycastHit hit;
         if (Vector3.Distance(transform.position, player.transform.position) < maxRange)
         {
-
+            Debug.Log("Close");
             if (Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, maxRange))
             {
-                
+                Debug.Log("ray");
                 if (hit.transform == player.transform)
                 {
-
+                    Debug.Log("attack");
                     //Player is in range and can be seen.
                     chasing = true;
                 } else
                 {
+                    Debug.Log("No attacking");
                     chasing = false;
                 }
+            } else
+            {
+                Debug.Log("Tell dragonheart if this shows up because it really shouldn't but sometimes it fucking does.");
             }
         } else
         {
