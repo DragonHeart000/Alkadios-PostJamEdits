@@ -78,7 +78,7 @@ public class MainCharacterScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        currentMovementSpeed = MOVE_SPEED_WALK;
     }
 
     // Update is called once per frame
