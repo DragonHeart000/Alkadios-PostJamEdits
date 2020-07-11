@@ -5,6 +5,7 @@ using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MainCharacterScript : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class MainCharacterScript : MonoBehaviour
     const int MOVE_SPEED_RUN = 5;
     const int ENEMY_DISTANCE_FEAR = 5;
     System.Random random = new System.Random(Guid.NewGuid().GetHashCode());
+    NavMeshAgent navMeshAgent;
 
     // dynamic attributes
     private int currentHP = 10;
@@ -33,6 +35,8 @@ public class MainCharacterScript : MonoBehaviour
             Console.Write("Movement speed input unrecognized, please input walk or run");
         }
         currentMovementSpeed = speed;
+        navMeshAgent.speed = currentMovementSpeed;
+
     }
 
     // only walking or running, so no incrementation of speed
@@ -78,7 +82,8 @@ public class MainCharacterScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentMovementSpeed = MOVE_SPEED_WALK;
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        setCurrentMovementSpeed(MOVE_SPEED_WALK);
     }
 
     // Update is called once per frame
@@ -86,11 +91,11 @@ public class MainCharacterScript : MonoBehaviour
     {
         if (currentMovementSpeed == MOVE_SPEED_WALK && enemyScan() > 3)
         {
-            currentMovementSpeed = MOVE_SPEED_RUN;
+            setCurrentMovementSpeed(MOVE_SPEED_RUN);
         }
         else if (currentMovementSpeed == MOVE_SPEED_RUN && enemyScan() < 3)
         {
-            currentMovementSpeed = MOVE_SPEED_WALK;
+            setCurrentMovementSpeed(MOVE_SPEED_WALK);
         }
     }
 }
