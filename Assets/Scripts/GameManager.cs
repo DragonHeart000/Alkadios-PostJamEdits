@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Hosting;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,9 +23,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RestartLevel()
+    {
+        //Application.LoadLevel(Application.loadedLevel);
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+        Time.timeScale = 1.0f;
+    }
+
+    public void QuitToMainMenu()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void QuitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false; // delete for release
+        UnityEditor.EditorApplication.isPlaying = false; // delete for release?
         Application.Quit();
     }
 
