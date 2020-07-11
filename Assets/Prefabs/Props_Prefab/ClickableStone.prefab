@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6905490172443983283}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ClickableStone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6905490173664384268}
   - component: {fileID: 6905490173664384269}
   - component: {fileID: 6905490173664384266}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c782e8ead7f19364daeeafb4934f9cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisObstacle: {fileID: 6905490173664384266}
 --- !u!208 &6905490173664384266
 NavMeshObstacle:
   m_ObjectHideFlags: 0
