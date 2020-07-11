@@ -21,6 +21,7 @@ public class MonsterMovement : MonoBehaviour
     //There should be an empty game object that contains all the targets for each specific monster
     public GameObject targetsContainer;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,7 +69,17 @@ public class MonsterMovement : MonoBehaviour
         {
             chasing = false;
         }
+
+        //Determine if the enemy is close enough to attack.
+        //Super bad way of determining collisions but for this type of game and it being a jam this is totally sufficiant.
+        if (Vector3.Distance(transform.position, player.transform.position) < 1.2f)
+        {
+            player.GetComponent<MainCharacterScript>().incrementCurrentHP(-1);
+            GameObject.Destroy(this.gameObject);
+        }
     }
+
+    #region Targeting
 
     public void changeTillValidTarget()
     {
@@ -106,4 +117,6 @@ public class MonsterMovement : MonoBehaviour
         }
 
     }
+
+    #endregion
 }
