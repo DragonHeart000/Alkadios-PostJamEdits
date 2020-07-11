@@ -1,26 +1,26 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Diagnostics;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Security.Cryptography;
+using System.Threading;
+using System.Timers;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class MainCharacterScript : MonoBehaviour
 {
     // constant attributes
-    const int MAX_HP = 10;
+    const int MAX_HP = 3;
+    const int MOVE_SPEED_STOP = 0;
     const int MOVE_SPEED_WALK = 3;
     const int MOVE_SPEED_RUN = 5;
-    const int ENEMY_DISTANCE_FEAR = 5;
-    System.Random random = new System.Random(Guid.NewGuid().GetHashCode());
+    const int ENEMY_DISTANCE_FEAR = 50;
     NavMeshAgent navMeshAgent;
 
     // dynamic attributes
-    private int currentHP = 10;
+    private int currentHP = MAX_HP;
     private int currentMovementSpeed = 0;
-    //private int currentFearLevel = 0;
     bool isDistracted = false;
 
     // setters and incrementers
@@ -30,34 +30,31 @@ public class MainCharacterScript : MonoBehaviour
 
     public void setCurrentMovementSpeed(int speed)
     {
-        if (speed != MOVE_SPEED_RUN && speed != MOVE_SPEED_WALK)
+        if (speed != MOVE_SPEED_RUN && speed != MOVE_SPEED_WALK && speed != MOVE_SPEED_STOP)
         {
-            Console.Write("Movement speed input unrecognized, please input walk or run");
+            Debug.Log("Movement speed input unrecognized, please input stop, walk, or run");
         }
         currentMovementSpeed = speed;
         navMeshAgent.speed = currentMovementSpeed;
-
     }
 
     // only walking or running, so no incrementation of speed
     //public void incrementCurrentMovementSpeed(int delta) {   currentMovementSpeed += delta;  }
 
-    //public void setCurrentFearLevel(int fear) { currentFearLevel = fear; }
-
-    //public void incrementCurrentFearLevel(int delta)  {    currentFearLevel += delta;  }
-
     // Function to that rolls to see if character becomes distracted by environment/object
     //   then runs the distraction anim and sets bool
-    void rollDistract(System.Random r)
+    void rollDistract()
     {
         if (isDistracted) return;
 
-        int roll = r.Next(0, 100);
-        if (roll > 49)
+        int roll = (int)Random.Range(0, 10000);
+        if (roll < 1)
         {
             isDistracted = true;
-            Console.Write("Character has become distracted!");
+            Debug.Log("Character has become distracted!");
+            setCurrentMovementSpeed(MOVE_SPEED_STOP);
             // distraction animation start to finish then reset bool
+
             isDistracted = false;
         }
     }
@@ -89,13 +86,17 @@ public class MainCharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentMovementSpeed == MOVE_SPEED_WALK && enemyScan() > 3)
+        if (currentMovementSpeed == MOVE_SPEED_WALK && enemyScan() >= 3)
         {
             setCurrentMovementSpeed(MOVE_SPEED_RUN);
         }
         else if (currentMovementSpeed == MOVE_SPEED_RUN && enemyScan() < 3)
         {
             setCurrentMovementSpeed(MOVE_SPEED_WALK);
+        }
+        if (enemyScan() == 0 && !isDistracted)
+        {
+            rollDistract();
         }
     }
 }
