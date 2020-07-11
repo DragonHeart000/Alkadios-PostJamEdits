@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2155474043835909701}
   - component: {fileID: 1037899755327573783}
   - component: {fileID: 7853618475007093224}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6765074530539553934}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character_FollowCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 6765074530929128605}
   - component: {fileID: 6765074530929128604}
   - component: {fileID: 6765074530929128603}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FollowCam
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
