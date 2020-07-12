@@ -8,6 +8,8 @@ public class Footsteps : MonoBehaviour
     private Vector3 lastPosition;
     public AudioSource audio;
 
+    public Animator ani;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,9 @@ public class Footsteps : MonoBehaviour
         Vector3 curMove = transform.position - lastPosition;
         speed = curMove.magnitude / Time.deltaTime;
         lastPosition = transform.position;
+
+        Debug.Log("Speed: " + speed);
+        ani.SetFloat("speed", speed);
 
         if (speed > 2f)
         {
