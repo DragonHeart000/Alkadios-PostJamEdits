@@ -2160,7 +2160,7 @@ MonoBehaviour:
   heart1: {fileID: 6665580038216094612}
   heart2: {fileID: 2247479075311504805}
   heart3: {fileID: 5923607295149513782}
-  keyAmountText: {fileID: 0}
+  keyAmountText: {fileID: 3339766804451837392}
 --- !u!1 &8618155455052874348
 GameObject:
   m_ObjectHideFlags: 0
