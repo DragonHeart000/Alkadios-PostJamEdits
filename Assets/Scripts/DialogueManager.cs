@@ -21,6 +21,10 @@ public class DialogueManager : MonoBehaviour
     const string TEST_PATH = "Assets/Resources/testscript.txt";
     const string TEST_PATH_ALT = "Assets/Resources/testscriptalt.txt";
 
+    const int MAIN_MENU = 0;
+    const int LEVEL_1 = 1;
+    const int LEVEL_2 = 2;
+
     //StreamReader sr;
     public TextMeshProUGUI DialogueText;
     public Image speakerImage;
@@ -209,7 +213,7 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         // testing dialogue with space bar trigger -- remove for release
-        if (Input.GetKeyDown("space"))
-            startDialogue("Level 1");
+        /*if (Input.GetKeyDown("space"))
+            startDialogue(LEVEL_1);*/
     }
 }
