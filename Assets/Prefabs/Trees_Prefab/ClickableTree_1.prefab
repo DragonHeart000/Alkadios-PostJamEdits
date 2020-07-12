@@ -42,6 +42,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fallen: 0
+  lightningPrefab: {fileID: 575349371930057791, guid: 0c868534e3687a94cabf8b3f41357cc9,
+    type: 3}
 --- !u!1 &7548827692354724558
 GameObject:
   m_ObjectHideFlags: 0

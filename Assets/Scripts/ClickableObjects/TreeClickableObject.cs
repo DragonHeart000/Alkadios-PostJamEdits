@@ -36,6 +36,9 @@ public class TreeClickableObject : ClickableObject
     public override void BreakPower()
     {
         base.BreakPower();
+
+        Lightning.instance.spawn(gameObject.transform.position);
+
         Destroy(gameObject.transform.parent.gameObject);
     }
 
