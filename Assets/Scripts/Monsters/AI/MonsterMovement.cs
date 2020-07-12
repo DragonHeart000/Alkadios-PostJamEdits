@@ -22,6 +22,11 @@ public class MonsterMovement : MonoBehaviour
     //There should be an empty game object that contains all the targets for each specific monster
     public GameObject targetsContainer;
 
+    //speed
+    private float speed;
+    private Vector3 lastPosition;
+
+    public Animator ani;
 
     // Start is called before the first frame update
     void Start()
@@ -97,6 +102,13 @@ public class MonsterMovement : MonoBehaviour
             player.GetComponent<MainCharacterScript>().hit();
             GameObject.Destroy(this.gameObject);
         }
+
+        //Speed
+        Vector3 curMove = transform.position - lastPosition;
+        speed = curMove.magnitude / Time.deltaTime;
+        lastPosition = transform.position;
+
+        ani.SetFloat("speed", speed);
     }
 
     #region Targeting
