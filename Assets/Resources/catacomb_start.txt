@@ -1,4 +1,6 @@
 {
+	"lines":
+		[
 		{
 			"speaker":"Alkadios",
 			"text":"These tombs are much darker than the outdoors..."
@@ -39,4 +41,5 @@
 			"speaker":"Eleos",
 			"text":"I wish you could hear me, because I'm getting some good shots in here."
 		}
+		]
 	}
