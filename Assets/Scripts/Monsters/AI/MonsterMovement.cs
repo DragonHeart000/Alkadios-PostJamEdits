@@ -94,7 +94,7 @@ public class MonsterMovement : MonoBehaviour
         //Super bad way of determining collisions but for this type of game and it being a jam this is totally sufficiant.
         if (Vector3.Distance(transform.position, player.transform.position) < 1.2f)
         {
-            player.GetComponent<MainCharacterScript>().incrementCurrentHP(-1);
+            player.GetComponent<MainCharacterScript>().hit();
             GameObject.Destroy(this.gameObject);
         }
     }

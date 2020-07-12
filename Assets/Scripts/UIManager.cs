@@ -34,10 +34,12 @@ public class UIManager : MonoBehaviour
 
     public void incrementKeys(int i)
     {
+        Debug.Log("Changing key amount!");
         keyAmount += i;
         if (keyAmount < 0)
             keyAmount = 0;
-        keyAmountText.text = "x" + keyAmount;
+        string amountTxt = "x" + keyAmount;
+        keyAmountText.text = amountTxt;
     }
 
     public void TogglePauseMenu()
