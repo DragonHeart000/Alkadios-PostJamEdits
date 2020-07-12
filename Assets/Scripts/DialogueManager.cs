@@ -29,11 +29,18 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI DialogueText;
     public Image speakerImage;
     public Button NextLineButton;
+    public Image ProtImageBox;
+    public TextMeshProUGUI Nameplate;
+
+    public Sprite Athena;
+    public Sprite Eleos;
+    public Sprite Hermes;
+
     Canvas dialogueCanvas;
     int currentLine = 0;
     //public TextAsset json;
     DialogueLine[] lines;
-    int nextLevel = -1;
+    bool nextLevel = false;
 
     public static DialogueManager instance;
 
@@ -45,6 +52,9 @@ public class DialogueManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(instance);
+
+        dialogueCanvas = GetComponentInChildren<Canvas>();
+        dialogueCanvas.enabled = false;
     }
 
     public static class JsonHelper
@@ -133,11 +143,12 @@ public class DialogueManager : MonoBehaviour
         return scriptLines;
     }
 
-    public void startDialogue(int scene)
+    public void startDialogue(bool EndOfScene)
     {
-        nextLevel = scene;
-        bool isEnd = (nextLevel != -1);
-        string path = getFileForScene(SceneManager.GetActiveScene().name, isEnd);
+        //nextLevel = scene;
+        //bool isEnd = (nextLevel != -1);
+        nextLevel = EndOfScene;
+        string path = getFileForScene(SceneManager.GetActiveScene().name, EndOfScene);
 
         if (!File.Exists(path))
         {
@@ -164,23 +175,26 @@ public class DialogueManager : MonoBehaviour
 
     public void nextLine()
     {
+        ProtImageBox.enabled = false;
         if (currentLine < lines.Length && lines[currentLine] != null)
         {
             DialogueText.text = lines[currentLine].text;
+            Nameplate.text = lines[currentLine].speaker;
             // placeholder names throughout
             switch (lines[currentLine].speaker)
             {
                 case "Alkadios":
-                    speakerImage = Resources.Load<Image>("AlkadiosImage");
+                    speakerImage.sprite = null;
+                    ProtImageBox.enabled = true;
                     break;
                 case "Athena":
-                    speakerImage = Resources.Load<Image>("AthenaImage");
+                    speakerImage.sprite = Athena;
                     break;
                 case "Hermes":
-                    speakerImage = Resources.Load<Image>("HermesImage");
+                    speakerImage.sprite = Hermes;
                     break;
                 case "Eleos":
-                    speakerImage = Resources.Load<Image>("EleosImage");
+                    speakerImage.sprite = Eleos;
                     break;
             }
             currentLine++;
@@ -194,9 +208,9 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueCanvas.enabled = false;
         Time.timeScale = 1.0f;
-        if (nextLevel != -1)
+        if (nextLevel)
         {
-            SceneManager.LoadScene(nextLevel);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -205,15 +219,14 @@ public class DialogueManager : MonoBehaviour
     {
         //NextLineButton = GetComponent<Button>();
         //DialogueText = GetComponent<TextMeshProUGUI>();
-        dialogueCanvas = GetComponentInChildren<Canvas>();
-        dialogueCanvas.enabled = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        // testing dialogue with space bar trigger -- remove for release
-        /*if (Input.GetKeyDown("space"))
-            startDialogue(LEVEL_1);*/
+        //testing dialogue with space bar trigger --remove for release
+        //if (Input.GetKeyDown("space"))
+        //        startDialogue(LEVEL_1);
     }
 }
