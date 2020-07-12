@@ -114,9 +114,9 @@ public class MainCharacterScript : MonoBehaviour
         {
             setCurrentMovementSpeed(MOVE_SPEED_WALK);
         }
-        if (enemyScan() == 0 && !isDistracted)
+        /*if (enemyScan() == 0 && !isDistracted)
         {
-            //rollDistract();
-        }
+            rollDistract();
+        }*/
     }
 }
