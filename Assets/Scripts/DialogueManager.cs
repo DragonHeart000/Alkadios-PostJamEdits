@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     const string CATA_START_PATH = "Assets/Resources/catacomb_start.txt";
     const string CATA_END_PATH = "Assets/Resources/catacomb_end.txt";
     const string BEACH_START_PATH = "Assets/Resources/beach_start.txt";
+    const string BEACH_END_PATH = "Assets/Resources/beach_end.txt";
     const string TEST_PATH = "Assets/Resources/testscript.txt";
     const string TEST_PATH_ALT = "Assets/Resources/testscriptalt.txt";
 
@@ -46,12 +47,12 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null && instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        instance = this;
-        DontDestroyOnLoad(instance);
+        //if (instance != null && instance != this)
+        //{
+        //    Destroy(this.gameObject);
+        //}
+        //instance = this;
+        //DontDestroyOnLoad(instance);
 
         dialogueCanvas = GetComponentInChildren<Canvas>();
         dialogueCanvas.enabled = false;
@@ -118,7 +119,7 @@ public class DialogueManager : MonoBehaviour
                 break;
             case "Level 3":
                 if (isEnd)
-                    path = "";
+                    path = BEACH_END_PATH;
                 else
                     path = BEACH_START_PATH;
                 break;
@@ -200,6 +201,7 @@ public class DialogueManager : MonoBehaviour
             currentLine++;
         }
         else {
+            currentLine = 0;
             endDialogue();
         }
     }

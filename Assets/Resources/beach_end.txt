@@ -1,0 +1,64 @@
+{
+	"lines":[
+		{
+			"speaker":"Eleos",
+			"text":"Is this the spot?"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Here, brother, at this point where once you boldly entered the world, do I return you to that which you knew before."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":" Free from the confines of that too-small tomb, your glory may now spread across the sea."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"..."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"I don't think I'll be there for a while..."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"But I can't wait to see you."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Gods of Mount Olympos watch over you."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"I don't think I'll be there for a while..."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"We are."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Or, well - I will."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Thank you, Resplendent Zeus, Father-God of the Righteous Heavens."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Thank you, Bounteous Poseidon, Stalwart Keeper of the Aegean Sea."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Thank you, Stoic Hades, Benevolent Caretaker of Those Now Gone."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"And thank you, Kind Eleos, Minor Goddess of Compassion."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"...No problem."
+		}
+		]
+	}

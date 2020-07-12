@@ -19,7 +19,7 @@
 		},
 		{
 			"speaker":"Alkadios",
-			"text":"The name "Alkadios" shall be remembered forever!"
+			"text":"The name \"Alkadios\" shall be remembered forever!"
 		},
 		{
 			"speaker":"Eleos",
@@ -27,7 +27,7 @@
 		},
 		{
 			"speaker":"Eleos",
-			"text":"Having a title's not all it's cracked up to be. Signed, the "Goddess of Pity"."
+			"text":"Having a title's not all it's cracked up to be. Signed, the \"Goddess of Pity\"."
 		},
 		{
 			"speaker":"Eleos",
