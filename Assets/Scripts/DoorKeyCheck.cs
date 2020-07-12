@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class DoorKeyCheck : MonoBehaviour
 {
+    private Animator ani;
+
+    public GameObject blockerCube;
+
+    private void Start()
+    {
+        ani = transform.gameObject.GetComponent<Animator>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entered");
@@ -13,7 +22,9 @@ public class DoorKeyCheck : MonoBehaviour
             if (MCS.CheckForKey())
             {
                 Debug.Log("OpenDoor");
-                // call open door anim
+                ani.SetTrigger("open"); //this animation is not working
+                Destroy(blockerCube);
+                Destroy(gameObject);
             }
         }
     }
