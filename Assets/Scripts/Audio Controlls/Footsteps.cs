@@ -23,7 +23,6 @@ public class Footsteps : MonoBehaviour
         speed = curMove.magnitude / Time.deltaTime;
         lastPosition = transform.position;
 
-        Debug.Log("Speed: " + speed);
         ani.SetFloat("speed", speed);
 
         if (speed > 2f)
