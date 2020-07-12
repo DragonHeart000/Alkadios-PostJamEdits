@@ -1,0 +1,26 @@
+{
+		{
+			"speaker":"Alkadios",
+			"text":"Many perils have I faced - and yet against them, I rise triumphant!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"You're welcome."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"And now, at long last, have I arrived at the gates to the Tombs of Glory, bringing an end to my journey through the mountains!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Congrats, well done, feel free to sacrifice a calf to Eleos, Goddess of -"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"And thus my quest through the Catacombs begins!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"...Great."
+		}
+	}

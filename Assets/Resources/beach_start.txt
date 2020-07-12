@@ -1,0 +1,22 @@
+{
+		{
+			"speaker":"Alkadios",
+			"text":"- What sorcery is this?"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Moments ago, I was deep in the bowels of Gaia, and yet now - the shore?"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"...Perhaps the Gods are watching after all."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Just one, but she's doing her best."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Now then, sand! Be crushed beneath my heroic footsteps!"
+		}
+	}

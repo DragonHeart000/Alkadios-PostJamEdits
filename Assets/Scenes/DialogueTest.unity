@@ -357,6 +357,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4293551183059188136, guid: a55aa64abfc03ad4d97b865ed1e9f992,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 4293551183059188143, guid: a55aa64abfc03ad4d97b865ed1e9f992,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -371,6 +376,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293551183059188143, guid: a55aa64abfc03ad4d97b865ed1e9f992,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293551183059188143, guid: a55aa64abfc03ad4d97b865ed1e9f992,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4293551183103760742, guid: a55aa64abfc03ad4d97b865ed1e9f992,
         type: 3}
@@ -432,6 +447,16 @@ PrefabInstance:
       propertyPath: DialogueText
       value: 
       objectReference: {fileID: 794312184}
+    - target: {fileID: 4293551184791932312, guid: a55aa64abfc03ad4d97b865ed1e9f992,
+        type: 3}
+      propertyPath: speakerImage
+      value: 
+      objectReference: {fileID: 794312185}
+    - target: {fileID: 4293551184791932312, guid: a55aa64abfc03ad4d97b865ed1e9f992,
+        type: 3}
+      propertyPath: NextLineButton
+      value: 
+      objectReference: {fileID: 2075442455}
     - target: {fileID: 4293551184791932313, guid: a55aa64abfc03ad4d97b865ed1e9f992,
         type: 3}
       propertyPath: m_Name
@@ -516,6 +541,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &794312185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4293551184313965830, guid: a55aa64abfc03ad4d97b865ed1e9f992,
+    type: 3}
+  m_PrefabInstance: {fileID: 794312182}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &900546527
@@ -1259,6 +1296,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff4dcfdb24bb6db4683573d8544c1b90, type: 3}
+--- !u!114 &2075442455 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4293551183059188143, guid: a55aa64abfc03ad4d97b865ed1e9f992,
+    type: 3}
+  m_PrefabInstance: {fileID: 794312182}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2137204040
 PrefabInstance:
   m_ObjectHideFlags: 0

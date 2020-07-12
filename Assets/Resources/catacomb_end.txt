@@ -1,0 +1,54 @@
+{
+		{
+			"speaker":"Alkadios",
+			"text":"- Finally!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Unlike the rest, this is a limited-edition dead body, highly sought-after by collectors."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Alkadios, the first..."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"The first to what, grave-rob?"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Not a day goes by I do not miss you, my brother."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"....Oh."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"And though I may carry your name, I could never carry a fraction of the glory you knew."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"..."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"But I can carry you out of here."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"I know you rest in the ever-verdant fields of Elysium - but still -"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"I'd like to bring peace to that of you which remains here."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Now I just need to find my way out of this tomb, and my pilgrimage to the Aegean Sea can begin..."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"...."
+		}
+	}
