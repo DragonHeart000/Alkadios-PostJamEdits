@@ -64,14 +64,16 @@ public class UIManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        isPaused = false;
         //Application.LoadLevel(Application.loadedLevel);
         Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
         Time.timeScale = 1.0f;
+        SceneManager.LoadScene(currentScene.name);
     }
 
     public void QuitToMainMenu()
     {
+        isPaused = false;
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene("MainMenu");
     }
@@ -93,7 +95,7 @@ public class UIManager : MonoBehaviour
         //key = igiCanvas.GetComponent<Image>();
         //key.color = new Color(key.color.r, key.color.g, key.color.b, 0f);
 
-        TogglePauseMenu(); //There was a bug where after restarting you had to pause and then unpause to get stuff working again, this is a shitty fix.
+        //TogglePauseMenu(); //There was a bug where after restarting you had to pause and then unpause to get stuff working again, this is a shitty fix.
     }
 
     // Update is called once per frame
