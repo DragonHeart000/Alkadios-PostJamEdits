@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 47e888d49ff5b984ba6dae20dab77974
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 1877358095493072753
+    second: Armature|Gate_Open_Anim
   externalObjects:
   - first:
       type: UnityEngine:Material
