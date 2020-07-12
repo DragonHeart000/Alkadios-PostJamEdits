@@ -34,7 +34,7 @@ public class Clicker : MonoBehaviour
             }
         }
         // Left click up -- telekinesis end
-        if (Input.GetMouseButtonUp(0) && !UIManager.isPaused)
+        if (Input.GetMouseButtonUp(0) || (UIManager.isPaused && isDragging))
         {
             isDragging = false;
             if (CO != null)

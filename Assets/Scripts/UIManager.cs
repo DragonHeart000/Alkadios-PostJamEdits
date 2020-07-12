@@ -16,14 +16,16 @@ public class UIManager : MonoBehaviour
         {
             isPaused = false;
             pauseCanvas.enabled = false;
-            audio.Play();
+            if (audio != null)
+                audio.Play();
             Time.timeScale = 1.0f;
         }
         else
         {
             isPaused = true;
             pauseCanvas.enabled = true;
-            audio.Pause();
+            if (audio != null)
+                audio.Pause();
             Time.timeScale = 0.0f;
         }
     }
