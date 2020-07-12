@@ -113,7 +113,7 @@ public class MainCharacterScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UIM = GetComponent<UIManager>();
+        UIM = GameObject.FindGameObjectWithTag("UI").GetComponent<UIManager>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         setCurrentMovementSpeed(MOVE_SPEED_WALK);
     }
