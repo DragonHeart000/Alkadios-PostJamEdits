@@ -1,0 +1,42 @@
+{
+		{
+			"speaker":"Alkadios",
+			"text":"These tombs are much darker than the outdoors..."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"I mean - yeah."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"But dimness, too, can be conquered!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Yeah, I'm trying."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"The name "Alkadios" shall be remembered forever!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Why are mortals so obsessed with their legacies?"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Having a title's not all it's cracked up to be. Signed, the "Goddess of Pity"."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Sacred Tombs, by the way, interesting choice for the site of your heroic deeds."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Would've loved to see the strategy meeting behind that decision."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"I wish you could hear me, because I'm getting some good shots in here."
+		}
+	}
