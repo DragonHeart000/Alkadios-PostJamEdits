@@ -23,7 +23,7 @@
 		},
 		{
 			"speaker":"Alkadios",
-			"text":"And so the quest of Alkadios begins! The name "Alkadios" shall be remembered forever! Gods watch over me!"
+			"text":"And so the quest of Alkadios begins! The name \"Alkadios\" shall be remembered forever! Gods watch over me!"
 		},
 		{
 			"speaker":"Athena",
@@ -43,7 +43,7 @@
 		},
 		{
 			"speaker":"Athena",
-			"text":""And so the quest of Alkadios begins!""
+			"text":"And so the quest of Alkadios begins!"
 		},
 		{
 			"speaker":"Hermes",

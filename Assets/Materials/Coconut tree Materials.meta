@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials/Grass Materials/Materials.meta
+guid: 786f8de8f2bd4a048a67a1b87f700a42
+=======
 guid: 58f68f72f1f9103409caaf5bc879fc54
+>>>>>>> eb0175f3ec20ae63dbbb3e8f5cc8c3fe528f599d:Assets/Materials/Coconut tree Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
