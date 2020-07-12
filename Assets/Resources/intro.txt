@@ -1,0 +1,146 @@
+{
+		{
+			"speaker":"Alkadios",
+			"text":"Hear me now - I, Alkadios of Thebes, swear to spread your glory to each and every corner of Hellas!"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"And so I offer my sacred prayers to the Gods of Mount Olympos."
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Righteous Zeus, who rules the Heavens - let me be your sword!"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Bounteous Poseidon, who keeps the seas - let me be your shield!"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"Stoic Hades, who keeps those now gone - let me be your reach!"
+		},
+		{
+			"speaker":"Alkadios",
+			"text":"And so the quest of Alkadios begins! The name "Alkadios" shall be remembered forever! Gods watch over me!"
+		},
+		{
+			"speaker":"Athena",
+			"text":"....."
+		},
+		{
+			"speaker":"Hermes",
+			"text":"....."
+		},
+		{
+			"speaker":"Athena",
+			"text":"Pffffff -"
+		},
+		{
+			"speaker":"Hermes",
+			"text":"HA!"
+		},
+		{
+			"speaker":"Athena",
+			"text":""And so the quest of Alkadios begins!""
+		},
+		{
+			"speaker":"Hermes",
+			"text":"Stop, I'm gonna piss myself."
+		},
+		{
+			"speaker":"Athena",
+			"text":"What a dork."
+		},
+		{
+			"speaker":"Hermes",
+			"text":"You ever notice how mortals always pray to the big guys? Like they think they can just invoke Dad's name and get an audience with him pronto."
+		},
+		{
+			"speaker":"Athena",
+			"text":"Hubris, is what it is."
+		},
+		{
+			"speaker":"Hermes",
+			"text":"What do you think - who should I dump this on?"
+		},
+		{
+			"speaker":"Athena",
+			"text":"Kick it down to the minor leagues."
+		},
+		{
+			"speaker":"Hermes",
+			"text":"God of Sleep, God of Blame, God of Doors -"
+		},
+		{
+			"speaker":"Athena",
+			"text":"I got it -"
+		},
+		{
+			"speaker":"Athena",
+			"text":"Eleos of Mount Olympos, I call thee forth!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"You have summoned me, Lady Athena?"
+		},
+		{
+			"speaker":"Athena",
+			"text":"A most bold, most noble, most important prayer must be answered."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"...Okay?"
+		},
+		{
+			"speaker":"Hermes",
+			"text":"Yea, the lady must steel herself in preparation for answering a prayer most crucial!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"What?"
+		},
+		{
+			"speaker":"Athena",
+			"text":"Dost thou see that mortal?"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Yes?"
+		},
+		{
+			"speaker":"Athena",
+			"text":"Make sure he doesn't kill himself."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Uhhh -"
+		},
+		{
+			"speaker":"Hermes",
+			"text":"We must away now, though I so wish we could take your place!"
+		},
+		{
+			"speaker":"Athena",
+			"text":"Alas, if only! But truly, an undertaking this noble could only be handled by the Goddess of Pity!"
+		},
+		{
+			"speaker":"Hermes",
+			"text":"Farewell!"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"...Not JUST pity."
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Alright, mortal, let's see what we can -"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Wait -"
+		},
+		{
+			"speaker":"Eleos",
+			"text":"Where's he going??"
+		}
+	}

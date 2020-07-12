@@ -1,0 +1,12 @@
+{
+"lines":[
+	{
+	 "speaker":"fuck",
+	 "text":"fuck"
+	},
+	{
+	 "speaker":"fuck",
+	 "text":"fuck fuck fuck"
+	}
+]
+}
