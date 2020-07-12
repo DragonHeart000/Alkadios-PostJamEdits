@@ -888,6 +888,80 @@ Transform:
   m_Father: {fileID: 143098521}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &703431107
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -45.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4961749
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5037962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50379616
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49617466
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 269.127
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 113.049995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608463103616447913, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_Name
+      value: Catacomb_Gate_dirt (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 760ac14ee31ae0045b5781a092859e58, type: 3}
 --- !u!1001 &1068893047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1251,6 +1325,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1383764647}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1435300945
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -27.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5033082
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49666983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4966698
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5033081
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455709713544473135, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.239006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267677762474422421, guid: 1be33a6148b70fd46b0bc63b89938c8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Catacomb_Gate_concrete
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1be33a6148b70fd46b0bc63b89938c8f, type: 3}
 --- !u!1 &1509012150
 GameObject:
   m_ObjectHideFlags: 1
@@ -1884,6 +2027,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2040696590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -46.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4961749
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5037962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50379616
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49617466
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 269.127
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123956070389198611, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 113.049995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608463103616447913, guid: 760ac14ee31ae0045b5781a092859e58,
+        type: 3}
+      propertyPath: m_Name
+      value: Catacomb_Gate_dirt
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 760ac14ee31ae0045b5781a092859e58, type: 3}
 --- !u!1001 &2100152353
 PrefabInstance:
   m_ObjectHideFlags: 0
