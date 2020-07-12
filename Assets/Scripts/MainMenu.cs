@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public GameObject DefaultButtons;
     public GameObject Settings;
+    public GameObject Credits;
     public AudioMixer audioMixer;
     public TMP_Dropdown resolutionDropdown;
     public Slider volumeSlider;
@@ -49,6 +50,14 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && !DefaultButtons.activeSelf)
+        {
+            Back();
+        }
+    }
+
     private void LoadSettings()
     {
         if (PlayerPrefs.HasKey("Volume"))
@@ -78,9 +87,16 @@ public class MainMenu : MonoBehaviour
         Settings.SetActive(true);
     }
 
+    public void OpenCredits()
+    {
+        DefaultButtons.SetActive(false);
+        Credits.SetActive(true);
+    }
+
     public void Back()
     {
         Settings.SetActive(false);
+        Credits.SetActive(false);
         DefaultButtons.SetActive(true);
         PlayerPrefs.Save();
     }
