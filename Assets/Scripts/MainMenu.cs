@@ -45,6 +45,8 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        Time.timeScale = 1.0f;
     }
 
     private void LoadSettings()
