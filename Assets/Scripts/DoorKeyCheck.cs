@@ -24,7 +24,6 @@ public class DoorKeyCheck : MonoBehaviour
                 Debug.Log("OpenDoor");
                 ani.SetTrigger("open"); //this animation is not working
                 Destroy(blockerCube);
-                Destroy(gameObject);
             }
         }
     }
