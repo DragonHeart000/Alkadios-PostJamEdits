@@ -21,7 +21,7 @@ public class MainCharacterScript : MonoBehaviour
     private int currentHP = MAX_HP;
     private int currentMovementSpeed = 0;
     bool isDistracted = false;
-    UIManager UIM;
+    public UIManager UIM;
 
     // Amount of pickusps in inventory
     int NrKeys = 0;
@@ -113,7 +113,6 @@ public class MainCharacterScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UIM = GameObject.FindGameObjectWithTag("UI").GetComponent<UIManager>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         setCurrentMovementSpeed(MOVE_SPEED_WALK);
     }
