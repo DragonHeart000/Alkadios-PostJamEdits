@@ -38,7 +38,7 @@ public class StoneClickableObject : ClickableObject
     public override void BreakPower()
     {
         base.BreakPower();
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 
     public override void StartTelekinesisPower(Camera camera)
