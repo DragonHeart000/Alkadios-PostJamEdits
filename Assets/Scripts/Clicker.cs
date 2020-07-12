@@ -9,17 +9,34 @@ public class Clicker : MonoBehaviour
     bool isDragging = false;
     ClickableObject CO;
 
+    int forceButton = 0;
+    int breakButton = 1;
+
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = true;
+
+        if (PlayerPrefs.HasKey("swapButtons"))
+        {
+            if (PlayerPrefs.GetInt("swapButtons") == 1)
+            {
+                forceButton = 1;
+                breakButton = 0;
+            }
+            else
+            {
+                forceButton = 0;
+                breakButton = 1;
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         // Left click down -- telekinesis start
-        if (Input.GetMouseButtonDown(0) && !UIManager.isPaused)
+        if (Input.GetMouseButtonDown(forceButton) && !UIManager.isPaused)
         {
             isDragging = true;
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -34,7 +51,7 @@ public class Clicker : MonoBehaviour
             }
         }
         // Left click up -- telekinesis end
-        if (Input.GetMouseButtonUp(0) || (UIManager.isPaused && isDragging))
+        if (Input.GetMouseButtonUp(forceButton) || (UIManager.isPaused && isDragging))
         {
             isDragging = false;
             if (CO != null)
@@ -45,7 +62,7 @@ public class Clicker : MonoBehaviour
         }
 
         // Right click -- breaker
-        if (Input.GetMouseButtonUp(1) && !isDragging && !UIManager.isPaused)
+        if (Input.GetMouseButtonUp(breakButton) && !isDragging && !UIManager.isPaused)
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
