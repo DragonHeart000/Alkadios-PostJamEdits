@@ -73,8 +73,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fallen: 0
-  lightningPrefab: {fileID: 575349371930057791, guid: 0c868534e3687a94cabf8b3f41357cc9,
-    type: 3}
+--- !u!95 &8616752836387147459
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4768792478624605379}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6c28c4ea9b92894389734d42126e735, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7945518679524188038
 PrefabInstance:
   m_ObjectHideFlags: 0
