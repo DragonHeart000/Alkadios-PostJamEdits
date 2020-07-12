@@ -1,4 +1,6 @@
 {
+	"lines":
+		[
 		{
 			"speaker":"Alkadios",
 			"text":"Hear me now - I, Alkadios of Thebes, swear to spread your glory to each and every corner of Hellas!"
@@ -143,4 +145,5 @@
 			"speaker":"Eleos",
 			"text":"Where's he going??"
 		}
+		]
 	}

@@ -1,4 +1,5 @@
 {
+	"lines":[
 		{
 			"speaker":"Alkadios",
 			"text":"- What sorcery is this?"
@@ -19,4 +20,5 @@
 			"speaker":"Alkadios",
 			"text":"Now then, sand! Be crushed beneath my heroic footsteps!"
 		}
+		]
 	}

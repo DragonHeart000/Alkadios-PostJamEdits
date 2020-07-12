@@ -1,4 +1,6 @@
 {
+	"lines":
+		[
 		{
 			"speaker":"Alkadios",
 			"text":"Many perils have I faced - and yet against them, I rise triumphant!"
@@ -23,4 +25,5 @@
 			"speaker":"Eleos",
 			"text":"...Great."
 		}
+		]
 	}

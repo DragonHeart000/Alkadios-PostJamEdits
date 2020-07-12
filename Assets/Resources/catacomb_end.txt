@@ -1,4 +1,6 @@
 {
+	"lines":
+		[
 		{
 			"speaker":"Alkadios",
 			"text":"- Finally!"
@@ -51,4 +53,5 @@
 			"speaker":"Eleos",
 			"text":"...."
 		}
+		]
 	}
