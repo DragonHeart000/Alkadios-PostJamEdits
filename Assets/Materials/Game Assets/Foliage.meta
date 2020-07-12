@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials/Game Assets/Foliage.meta
 guid: a61722b9871d92844b38902df1286653
 folderAsset: yes
 DefaultImporter:
+=======
+guid: 36427e2c6b6313248bccec7c57aa1478
+NativeFormatImporter:
+>>>>>>> 4254a4038f56f4fbf2459e202c48330eb771ffed:Assets/Scenes/MainMenu/Post Process Volume Profile.asset.meta
   externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

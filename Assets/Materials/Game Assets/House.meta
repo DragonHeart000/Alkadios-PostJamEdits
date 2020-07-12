@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials/Game Assets/House.meta
 guid: edf637661e6bbad4d82d238a991ab71c
 folderAsset: yes
 DefaultImporter:
+=======
+guid: eb43daecdfa703f4c80b62e4136f06db
+NativeFormatImporter:
+>>>>>>> 4254a4038f56f4fbf2459e202c48330eb771ffed:Assets/Scenes/MainMenu/Sky and Fog Volume Profile 1.asset.meta
   externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

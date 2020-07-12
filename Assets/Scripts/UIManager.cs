@@ -92,6 +92,8 @@ public class UIManager : MonoBehaviour
 
         //key = igiCanvas.GetComponent<Image>();
         //key.color = new Color(key.color.r, key.color.g, key.color.b, 0f);
+
+        TogglePauseMenu(); //There was a bug where after restarting you had to pause and then unpause to get stuff working again, this is a shitty fix.
     }
 
     // Update is called once per frame
