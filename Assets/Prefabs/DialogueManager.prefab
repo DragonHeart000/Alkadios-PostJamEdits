@@ -737,3 +737,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94601559449b7754e951f70b287f23e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogueText: {fileID: 4293551183103760742}

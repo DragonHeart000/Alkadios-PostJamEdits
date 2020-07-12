@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
 {
     string path = "Assets/Resources/testscript.txt";
     StreamReader sr;
-    TextMeshProUGUI DialogueText;
+    public TextMeshProUGUI DialogueText;
     Button NextLineButton;
     //public GameManager GM;
     Canvas dialogueCanvas;
@@ -41,14 +41,17 @@ public class DialogueManager : MonoBehaviour
 
     public void nextLine()
     {
-        DialogueText.text = sr.ReadLine();
+        if (sr.Peek() >= 0)
+        {
+            DialogueText.text = sr.ReadLine();
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
         NextLineButton = GetComponent<Button>();
-        DialogueText = GetComponent<TextMeshProUGUI>();
+        //DialogueText = GetComponent<TextMeshProUGUI>();
         dialogueCanvas = GetComponentInChildren<Canvas>();
         dialogueCanvas.enabled = false;
     }
