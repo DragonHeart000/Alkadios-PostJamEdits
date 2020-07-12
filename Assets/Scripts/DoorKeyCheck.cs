@@ -6,6 +6,7 @@ public class DoorKeyCheck : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Entered");
         var MCS = other.GetComponent<MainCharacterScript>();
         if (MCS != null && other.CompareTag("Player"))
         {

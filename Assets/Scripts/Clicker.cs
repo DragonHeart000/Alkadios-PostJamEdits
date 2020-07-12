@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Clicker : MonoBehaviour
 {
-
     public Camera mainCamera;
     bool isDragging = false;
     ClickableObject CO;
@@ -19,9 +18,8 @@ public class Clicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         // Left click down -- telekinesis start
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !UIManager.isPaused)
         {
             isDragging = true;
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -36,7 +34,7 @@ public class Clicker : MonoBehaviour
             }
         }
         // Left click up -- telekinesis end
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) || (UIManager.isPaused && isDragging))
         {
             isDragging = false;
             if (CO != null)
@@ -47,7 +45,7 @@ public class Clicker : MonoBehaviour
         }
 
         // Right click -- breaker
-        if (Input.GetMouseButtonUp(1) && !isDragging)
+        if (Input.GetMouseButtonUp(1) && !isDragging && !UIManager.isPaused)
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

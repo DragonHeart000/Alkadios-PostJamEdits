@@ -9,6 +9,7 @@ TagManager:
   - PointOfInterest
   - NavMesh
   - Folliage
+  - ClickableRock
   layers:
   - Default
   - TransparentFX

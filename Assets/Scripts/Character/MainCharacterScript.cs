@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Timers;
@@ -22,6 +21,7 @@ public class MainCharacterScript : MonoBehaviour
     private int currentHP = MAX_HP;
     private int currentMovementSpeed = 0;
     bool isDistracted = false;
+    UIManager UIM;
 
     // Amount of pickusps in inventory
     int NrKeys = 0;
@@ -39,6 +39,17 @@ public class MainCharacterScript : MonoBehaviour
         }
         currentMovementSpeed = speed;
         navMeshAgent.speed = currentMovementSpeed;
+    }
+
+    public void hit()
+    {
+        incrementCurrentHP(-1);
+        UIM.setHearts(currentHP);
+        if (currentHP <= 0)
+        {
+            // then perish
+        }
+
     }
 
     // only walking or running, so no incrementation of speed
@@ -84,6 +95,7 @@ public class MainCharacterScript : MonoBehaviour
         if (type == PickupTypes.key)
         {
             NrKeys += 1;
+            UIM.incrementKeys(1);
         }
     }
 
@@ -92,6 +104,7 @@ public class MainCharacterScript : MonoBehaviour
         if (NrKeys > 0)
         {
             NrKeys--;
+            UIM.incrementKeys(-1);
             return true;
         }
         return false;
@@ -100,6 +113,7 @@ public class MainCharacterScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        UIM = GetComponent<UIManager>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         setCurrentMovementSpeed(MOVE_SPEED_WALK);
     }
@@ -115,9 +129,9 @@ public class MainCharacterScript : MonoBehaviour
         {
             setCurrentMovementSpeed(MOVE_SPEED_WALK);
         }
-        if (enemyScan() == 0 && !isDistracted)
+        /*if (enemyScan() == 0 && !isDistracted)
         {
-            //rollDistract();
-        }
+            rollDistract();
+        }*/
     }
 }
