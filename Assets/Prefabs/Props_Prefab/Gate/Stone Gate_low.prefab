@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 978430719926704118}
   - component: {fileID: 8967803659320121749}
   - component: {fileID: 3979355037369127151}
-  m_Layer: 0
+  - component: {fileID: -2932224502522933351}
+  m_Layer: 10
   m_Name: Stone Gate_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,3 +121,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: -0.07, y: 0.1, z: 0.04}
   m_Center: {x: 0, y: -0.06, z: 0.02}
+--- !u!95 &-2932224502522933351
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846655219403098898}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87926c23e5ce7594dbcf1e98cf224a67, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
